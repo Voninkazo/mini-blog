@@ -33,7 +33,8 @@ const newPostList = document.getElementById('post-list');
 submitButton.addEventListener('click', ($event) => {
   const realPost = myPost();
   newPostList.appendChild(realPost);//Here we append the new post inside of the div
-
   // to stop the submission
   $event.preventDefault();
+  // And we will try to reset the form so that we can write new inputs
+  document.querySelector('form').reset();
 });
