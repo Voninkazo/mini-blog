@@ -22,7 +22,7 @@ const myPost = () => {
 
   //Here we are going to assign the title and the paragraph to their own contents according to the inputs.
   newTitle.textContent = document.getElementById('new-post-title').value;
-  newParagraph.textContent = document.getElementById('new-post-title').value;
+  newParagraph.textContent = document.getElementById('new-post-content').value;
 
   return newSpaceDiv;// We return the storage div that contains all of the elements
 }
